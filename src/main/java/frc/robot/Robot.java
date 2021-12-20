@@ -86,7 +86,7 @@ public class Robot extends TimedRobot {
   @Override
   public void teleopPeriodic() {
     double inputLeft = m_rc.m_driverController.getLSVertical(); //gets vertical axis of left stick of driver controller.
-    double inputRight = m_rc.m_driverController.getRSVertical(); //gets vertical axis of left stick of driver controller
+    double inputRight = m_rc.m_driverController.getRSVertical(); //gets vertical axis of right stick of driver controller
 
     m_rc.m_drive.TankDrive(inputLeft, inputRight); 
     //control the motors via the tankDrive inputs.
